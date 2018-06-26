@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 import itchat
 
 users = ''
-SEARCH = 'LAG'
+SEARCH = u'雷神老人'
 itchat.login()
 room = itchat.search_chatrooms(SEARCH)
 room_full = itchat.update_chatroom(room[0]['UserName'], detailedMember=True)
@@ -15,7 +15,8 @@ for usr in room_full['MemberList']:
     print usr['NickName']
     users += ' ' + usr['NickName']
 print users
-
+with open('./nicks.txt', 'w') as f:
+    f.write(users)
 sig = users
 msk = numpy.array(Image.open('c:/temp/logo.jpg'))
 wc = WordCloud(font_path='STHUPO.TTF',
