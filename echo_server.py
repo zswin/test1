@@ -12,6 +12,7 @@ def srvSocket():
     tcpSrvSock.listen(5)
 
     while True:
+
         print ('Wating for Connection...')
         tcpCliSock, address = tcpSrvSock.accept()
 
