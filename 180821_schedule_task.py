@@ -5,7 +5,7 @@ import time
 import subprocess
 
 global TIME_POINTS
-TIME_POINTS = [('19:25:01', '19:26:01'),('19:27:01', '19:28:01'), ('19:40:30', '19:50:01')]
+TIME_POINTS = [('19:55:01', '19:56:01'),('19:57:01', '19:58:01'), ('19:59:30', '20:00:01')]
 global START_POINT
 START_POINT = 0
 global COMMAND
