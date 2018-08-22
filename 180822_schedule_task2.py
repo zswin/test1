@@ -64,4 +64,3 @@ if __name__ == '__main__':
             device_name = cfg.get('db', 'device_name')
             time_points = cfg.get('db', 'time_points')
             command = cfg.get('db', 'command')
-            print(''.join((device_id, device_name, time_points, command)))
