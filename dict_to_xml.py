@@ -19,3 +19,4 @@ if __name__ == "__main__":
     s = {'name':'goods', 'shares':100, 'price':490.1}
     e = dict_to_xml('stock', s)
     print(tostring(e))
+
