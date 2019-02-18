@@ -22,3 +22,7 @@ if __name__ == "__main__":
 
     with MyContextManager():
         print('test2')
+
+    with MyContextManager():
+        print('test3')
+        raise(IndexError)
