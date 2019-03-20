@@ -32,3 +32,4 @@ if __name__ == '__main__':
     print(q.pop())
     print(q.pop())
     print(q.pop())
+

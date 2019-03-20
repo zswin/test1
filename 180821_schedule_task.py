@@ -20,7 +20,7 @@ def f_run_task():
 def f_stop_task():
     global c
     print('###stop task', time.strftime('%Y-%m-%d %H:%M:%S', time.localtime()))
-    if c.poll() is  None:
+    if c.poll() is None:
         c.communicate(input=b'q')
     global START_POINT
     START_POINT += 1

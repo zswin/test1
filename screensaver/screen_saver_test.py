@@ -1,7 +1,10 @@
 #coding=utf-8
 __author__ = 'zs'
 from random import randint
-from tkinter import *
+try:
+    from Tkinter import *
+except ImportError:
+    from tkinter import *
 import time
 
 class RandBall():
@@ -76,7 +79,7 @@ class ScreenSaver():
         self.win.destroy()
 
 def main():
-    ScreenSaver(199)
+    ScreenSaver(115)
 
 if __name__ == '__main__':
     main()

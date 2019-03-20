@@ -73,7 +73,8 @@ def test4():
     for t in thread_list:
         t.setDaemon(True) # False同test1
         t.start()
-
+    for x in range(5):# main wait for child thread
+        time.sleep(1)
     print("main thread terminated", threading.current_thread().name)
     print("time used", time.time() - start_time)
 if __name__ == "__main__":
