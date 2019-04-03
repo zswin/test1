@@ -59,5 +59,5 @@ class SpdrQlstatsSpider(scrapy.Spider):
                 .extract_first().replace(',','/')
             item["kill_ratio"] = response.xpath("//div[@id='gbtabcontainer']/div[@id='tab-overall']/div/small[2]/text()")\
                 .extract_first().replace(',','/')
-
+#
         return item
