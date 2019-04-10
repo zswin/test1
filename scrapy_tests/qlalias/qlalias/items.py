@@ -11,8 +11,8 @@ import scrapy
 class QlaliasItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    player_id = scrapy.Field()
-    nick = scrapy.Field()
-    joined = scrapy.Field()
+    #player_id = scrapy.Field()
+    #nick = scrapy.Field()
+    #joined = scrapy.Field()
     steam_id = scrapy.Field()
     aliases = scrapy.Field()
