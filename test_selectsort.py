@@ -11,7 +11,6 @@ def select_sort(lst):
         if i != min_idx:
             lst[i], lst[min_idx] = lst[min_idx], lst[i]
             print(lst)
-
     return lst
 
 
